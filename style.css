@@ -10,8 +10,8 @@
 @media (min-width: 600px) {
     :root {
         --font-size: 1.5rem;
-
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 200;
     }
 
     body {
@@ -26,5 +26,9 @@
     h1 {
         color: pink;
         font-size: calc(var(--font-size) * 2);
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 }
