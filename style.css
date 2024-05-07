@@ -1,22 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 
-@media (min-width:300px) {
+@media screen {
     :root {
-        --font-size: 2.5rem;
+        --typography-base: 2.5rem;
     }
 
     body {
-        font-size: var(--font-size);
-        /* padding-top: calc(var(--font-size) * 3);
-        padding-left: calc(var(--font-size) * 3); */
         display: flex;
         flex-direction: column;
-        row-gap: var(--gutter);
         justify-content: center;
         background-color: rgb(125, 0, 251);
-        margin: 0;
-        padding: 0;
         height: 100vh;
         width: 100vw;
     }
@@ -36,33 +30,37 @@
     }
 
     header > p, footer > p {
-    font-size: 2.2rem;
+    font-size: calc(0.4 * var(--font-size));
+    text-align: center;
+    letter-spacing: 1.5;
     }
 
     footer {
         bottom: 0;
     }
 
-    h1, a {
+    a {
         color: pink;
-        font-size: calc(2.2 * var(--font-size));
+        font-size: 2rem;
         text-align: center;
-        line-height: 2.5rem;
+        line-height: 1.5rem;
         text-transform: uppercase;
+    }
+
+    p {
+        font-size: 1rem;;
     }
 
     p, .number {
         font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
         font-weight: 200;
         color: pink;
-        font-size: calc(1 * var(--font-size));
         margin-top: 1rem;
-        letter-spacing: 1.2;
         text-transform: uppercase;
     }
 
-    button > p {
-        color:pink;
+    .number {
+        font-size: 0.8rem;
     }
 
     ol {
@@ -93,14 +91,14 @@
     }
 
     @media (min-width: 700px) {
-        h1, a {
-            font-size: calc(var(--font-size) * 2);
+        a {
+            font-size: 4rem;
             line-height: 3rem;
         }
 
-        p {
-            font-size: calc(var(--font-size) * 0.6);
+        /* header> p, footer > p {
+            font-size: calc( 1 * var(--typography-base));
             margin-top: 1.1rem;
-        }
+        } */
     }
 }
