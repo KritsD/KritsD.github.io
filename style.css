@@ -21,11 +21,18 @@
         display: flex;
         flex-direction: column;
         row-gap: var(--gutter);
+
     }
 
-    h1 {
+    h1, a {
         color: pink;
-        font-size: calc(var(--font-size) * 2);
+        font-size: calc(var(--font-size) * 2.2);
+    }
+
+    p {
+        font-size: calc(var(--font-size) * 0.5);
+        margin-top: 1rem;
+        letter-spacing: 1.5;
     }
 
     a:hover {
