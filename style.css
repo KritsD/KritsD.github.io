@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 
 :root {
     --font-size: 1rem;
@@ -7,35 +8,103 @@
     --gutter: calc(var(--font-size) * 2);
 }
 
-@media (min-width: 600px) {
+@media screen {
     :root {
         --font-size: 1.5rem;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: 200;
     }
 
     body {
         font-size: var(--font-size);
-        padding-top: calc(var(--font-size) * 3);
-        padding-left: calc(var(--font-size) * 3);
+        /* padding-top: calc(var(--font-size) * 3);
+        padding-left: calc(var(--font-size) * 3); */
         display: flex;
         flex-direction: column;
         row-gap: var(--gutter);
+        justify-content: center;
+        background-color: rgb(125, 0, 251);
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+    }
 
+    header, footer {
+        display: flex;
+        justify-content: space-evenly;
+        color: pink;
+        position: fixed;
+        padding-bottom: 1rem;
+        left: 0;
+        right: 0;
+    }
+
+    header {
+        top: 0;
+    }
+
+    footer {
+        bottom: 0;
     }
 
     h1, a {
         color: pink;
-        font-size: calc(var(--font-size) * 2.2);
+        font-size: calc(var(--font-size) * 1.5);
+        text-align: center;
+        line-height: 2.5rem;
+        text-transform: uppercase;
     }
 
     p {
+        font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        font-weight: 200;
+        color: pink;
         font-size: calc(var(--font-size) * 0.5);
         margin-top: 1rem;
-        letter-spacing: 1.5;
+        letter-spacing: 1;
+        text-transform: uppercase;
+        text-align: center;
     }
 
-    a:hover {
-        text-decoration: underline;
+    ol {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    button {
+        font-family: "Bellefair", serif;
+        font-weight: 200;
+        font-style: normal;
+        margin: 0;
+        position: relative;
+        top: 10%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        color: black;
+    }
+
+    button .designer {
+        display: none;
+    }
+
+    button:hover .author {
+        display:none;
+    }
+
+    button:hover .designer {
+        display: inline;
+        color: rgb(77, 255, 0);
+    }
+
+    @media (min-width: 700px) {
+        h1, a {
+            font-size: calc(var(--font-size) * 2);
+            line-height: 3rem;
+        }
+
+        p {
+            font-size: calc(var(--font-size) * 0.6);
+            margin-top: 1.1rem;
+        }
     }
 }
