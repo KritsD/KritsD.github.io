@@ -94,17 +94,13 @@
 @media (min-width:700px) {
     a {
         font-size: calc(2.5 * var(--typography-base));
-        line-height: 1.4rem;
-    }
-
-    p, .number {
-        font-size: calc(1 * var(--typography-base));
+        line-height: 2rem;
     }
 }
 
 @media (min-width:900px) {
     a {
-        font-size: calc(2.8 * var(--typography-base));
+        font-size: calc(2.9 * var(--typography-base));
         line-height: 2.2rem;
     }
 }
