@@ -2,10 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 
 @media screen {
-    :root {
-        --typography-base: 2.5rem;
-    }
-
     body {
         display: flex;
         flex-direction: column;
@@ -30,7 +26,7 @@
     }
 
     header > p, footer > p {
-    font-size: calc(0.4 * var(--font-size));
+    font-size: 2rem;
     text-align: center;
     letter-spacing: 1.5;
     }
@@ -89,16 +85,16 @@
         display: inline;
         color: rgb(77, 255, 0);
     }
+}
 
-    @media (min-width: 700px) {
+@media (min-width: 700px) {
         a {
             font-size: 4rem;
             line-height: 3rem;
         }
 
-        /* header> p, footer > p {
-            font-size: calc( 1 * var(--typography-base));
+        header> p, footer > p {
+            font-size: 1rem;
             margin-top: 1.1rem;
-        } */
+        }
     }
-}
